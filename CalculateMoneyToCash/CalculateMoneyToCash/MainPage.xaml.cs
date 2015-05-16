@@ -47,7 +47,7 @@ namespace CalculateMoneyToCash
 
                 txtCashInput.Text = "";
                 totalCash = float.Parse(txtTotalCash.Text.Trim());
-                //percent = float.Parse(txtRatio.Text.Trim()) / 100;
+                percent = float.Parse(txtRatio.Text.Trim()) / 100;
                 cashInput = totalCash / (1 + percent);
                 txtCashInput.Text = cashInput.ToString("F2");
                 Reset();
